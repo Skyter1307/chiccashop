@@ -1,0 +1,77 @@
+chiccashop/
+│
+├── index.html                -> Página inicial (home)
+├── produtos.html             -> Catálogo de produtos
+├── produto.html              -> Página individual de produto*
+├── login.html                -> Login do cliente
+├── cadastro.html             -> Cadastro de cliente*
+├── admin.html                -> Login do admin (CHICCA)*
+├── painel_admin.php          -> Painel de controle (cadastrar produtos, etc)*
+├── carrinho.html             -> Carrinho de compras
+├── finalizar-compra.html     -> Tela com integração PagSeguro*
+│
+├── /css/
+│   └── style.css             -> Estilos customizados
+│
+├── /js/
+│   └── script.js             -> Funcionalidades JS (login, carrinho, etc)
+│
+├── /img/
+│   └── logo.png              -> Versão do logo escolhida (vou usar a preta com fundo escuro)
+│
+├── /php/
+│   ├── conexao.php           -> Conexão com banco
+│   ├── login.php             -> Validação de login (clientes e admin)
+│   ├── cadastro_usuario.php  -> Registro de novos usuários*
+│   ├── cadastrar_produto.php -> Admin adiciona novos produtos
+│   └── listar_produtos.php   -> Consulta produtos do banco
+│
+└── /sql/
+    └── chiccashop.sql        -> Script para criar as tabelas no MySQL*
+
+
+Ajustes:
+
+Passo antes da verificação:
+✅ Com isso, o core do projeto está entregue.
+
+Agora bora integrar o PagSeguro (forma mais simples: botão de pagamento direto ou checkout transparente). Quer que eu te envie com botão padrão ou integração avançada via API?
+
+- Verificar as medidas da logo para inclusão;
+
+📌 cadastro_usuario.php
+Status atual: Está vazio porque ainda não implementamos o sistema de cadastro de clientes.
+
+Próximo passo: Se quiser permitir que novos clientes se cadastrem (nome, email, senha etc.), eu crio esse formulário e o backend agora.
+
+📌 cadastro.htm
+Status atual: Vazio por estar vinculado ao cadastro_usuario.php, seria a página de cadastro de clientes.
+
+Próximo passo: Se for necessário o cadastro, eu já monto esse formulário (nome completo, email, senha, etc.) com estilo bonito.
+
+📌 finalizar-compra.html
+Status atual: Está em branco porque ainda não ligamos o carrinho com o PagSeguro.
+
+Próximo passo: Assim que você decidir o modelo (botão simples x API completa), a gente finaliza esse arquivo com o formulário de pagamento e os dados do cliente.
+
+📌 painel_admin.php
+Status atual: Ainda não utilizamos esse arquivo porque o painel de admin está sendo feito diretamente no admin.html.
+
+Opções:
+
+Podemos remover ele.
+
+Ou usá-lo como versão PHP protegida do painel, com autenticação mais segura no futuro.
+
+📌 produto.html
+Status atual: Em branco, pois ainda não foi implementada uma página de produto individual (tipo produto.php?id=123).
+
+Próximo passo: Se quiser permitir que o cliente clique em um produto e veja os detalhes, fotos, avaliações, etc., posso criar agora essa estrutura dinâmica com base no banco de dados.
+
+🔧 Resumo:
+
+Esses arquivos não são obrigatórios no momento, mas podem ser implementados se quiser expandir funcionalidades.
+
+Se quiser, me fala agora quais você quer ativar/usar pra já te mandar tudo completinho, beleza?
+
+Quer começar por algum deles?
